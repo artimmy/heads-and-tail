@@ -14,13 +14,13 @@ class _ResultState extends State<Result> {
   @override
   Widget build(BuildContext context) {
 
-    String imagePath;
+    String imagePath; 
 
-    if ( widget.value == "head") 
+    if ( widget.value == "head") // accordint to the result sent, if result is head...
     {
-      imagePath = "images/head.png";
+      imagePath = "images/head.png"; 
     } 
-    else 
+    else // if not...
     {
       imagePath = "images/tail.png";
     }
@@ -33,7 +33,7 @@ class _ResultState extends State<Result> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Image.asset(imagePath),
+          Image.asset(imagePath), // image path according to the result received
           GestureDetector(
             onTap: ()
             {
