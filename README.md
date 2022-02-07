@@ -1,6 +1,6 @@
 # heads_tail
 
-A heads and tail app.
+Heads and tail app
 
 ## Getting Started
 
