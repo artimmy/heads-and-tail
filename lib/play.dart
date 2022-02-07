@@ -11,16 +11,16 @@ class Play extends StatefulWidget {
 
 class _PlayState extends State<Play> {
 
-  void _displayResult()
+  void _displayResult() // creating a function to be called everytime the user press the button 'play'
   {
-    var items = ["head", "tail"];
-    var rand = Random().nextInt(2);
-    var result = items[rand];
+    var items = ["head", "tail"]; // creating a array 'items' with both options "head or tail"
+    var rand = Random().nextInt(2); // generating a random number 'rand'
+    var result = items[rand]; // generating a result to be sent to the next window
 
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => Result(result)
+        builder: (context) => Result(result) // sending the result to the next window
         )
       );
   }
